@@ -63,7 +63,7 @@ public class EBayBookScenarioPage extends GenericWebFunctions {
 			if (booksResultsList.size() == 0) {
 				log.error("No results returned from web for given search criteria");
 			} else {
-				clickOnElement(booksResultsList.get(n));
+				clickOnElement(booksResultsList.get(n-1));
 				switchToNextWindow();
 				isSelected = addToCartBtn.isEnabled();
 			}
